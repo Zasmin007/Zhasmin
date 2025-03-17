@@ -1,0 +1,30 @@
+<html lang="ru">
+<head>
+<title>Увеличение значения</title>
+<script>
+function checkNumber() {
+const inputField=document.getElementById('inputField');
+const outputField=document.getElementById('outputField');
+const value=inputField.value
+if (!isNaN(value) && value.trim() !=='') { 
+const
+doubledValue=Number(value)*2;
+outputField.value=doubledValue;
+} else {
+alert('Введите числовое значение');
+             }
+        }
+   </script>
+</head>
+<body>
+<h1>Увеличение числа</h1>
+<input type="text"
+id="inputField"
+placeholder="Введите число">
+<button
+onclick="checkNumber()">Увеличение в два раза</button>
+<input type="text"
+id="outputField"
+placeholder="Результат" readonly>
+</body>
+</html>
